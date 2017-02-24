@@ -538,9 +538,8 @@ svg#to_contact {
     left: 0
 }
 .block.experiences .left img.mobile {
-    left: calc(39% - 0.25px);
-    top: 26% !important;
-    width: 100px;
+    top: 57% ;
+    width: 23%;
     height: auto;
     border-radius: 10px
 }

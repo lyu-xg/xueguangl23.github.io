@@ -674,12 +674,19 @@ $(function() {
 	// ---------------------------------------
   initExperience();
 
+
   function showNextDemo(project) {
     removeCurrentDemo();
     if ( project === 'astronics') {
       setTimeout(function(){
+        $('.preview .'+project).addClass('active').css({
+          height:'auto',
+          width:'23%',
+          left: '0.5%',
+          top: '-200%'
+        });
         $('.preview .'+project).addClass('active').animate({
-          top: "50%",
+          top: "57%",
           opacity: 1
         }, 2000, 'easeOutExpo');
         $('.desc .'+project).addClass('active').animate({
@@ -690,11 +697,17 @@ $(function() {
     }
     else {
       setTimeout(function(){
+        $('.preview .'+project).addClass('active').css({
+          height:'auto',
+          width:'100%',
+          top: '-200%',
+        });
         $('.preview .'+project).addClass('active').animate({
-          top: "-58%",
-          height: "auto",
+          top: "34.6%",
           opacity: 1
         }, 2000, 'easeOutExpo');
+
+
         $('.desc .'+project).addClass('active').animate({
           top: 0,
           opacity: 1
@@ -709,14 +722,18 @@ $(function() {
   }
 
   function removeCurrentDemo() {
+    $('.preview .active').removeClass('active').css({
+      height: "0",
+      width: "0",
+    });
     $('.preview .active').removeClass('active').animate({
-      top: "-58%",
-      height: '0',
-      opacity: 0
+      top: "-200%",
+      opacity: 0.2
     }, 2000, 'easeOutExpo' );
+
     $('.desc .active').removeClass('active').animate( {
       top: "-200%",
-      opacity: 0
+      opacity: 0.2
     }, 2000, 'easeOutExpo' );
   }
 
