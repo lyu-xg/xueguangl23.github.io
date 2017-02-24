@@ -691,7 +691,8 @@ $(function() {
     else {
       setTimeout(function(){
         $('.preview .'+project).addClass('active').animate({
-          top: 0,
+          top: "-58%",
+          height: "auto",
           opacity: 1
         }, 2000, 'easeOutExpo');
         $('.desc .'+project).addClass('active').animate({
@@ -709,7 +710,8 @@ $(function() {
 
   function removeCurrentDemo() {
     $('.preview .active').removeClass('active').animate({
-      top: "200%",
+      top: "-58%",
+      height: '0',
       opacity: 0
     }, 2000, 'easeOutExpo' );
     $('.desc .active').removeClass('active').animate( {
@@ -831,11 +833,11 @@ $(function() {
   checkOutProject();
   closeProject();
 
-  
+
 
   $( document ).ready(function() {
 		console.log( "document ready! enjoy. -luke" );
-	  setTimeout(tear, 300);
+	  setTimeout(tear, 10);
   });
 
 

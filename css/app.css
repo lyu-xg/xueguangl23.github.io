@@ -502,32 +502,35 @@ svg#to_contact {
 .block.experiences .right {
     height: 738.5px;
     float: left;
-    display: inline-block
+    display: inline-block;
+    position: absolute;
+    left: 0px;
 }
 .block.experiences .left {
     width: 40%
 }
 
-.preview-resizer {
-  position: absolute;
+.left-container {
+  height: 100%;
   width: 100%;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  height: 80%;
+  /*display:inline-block;
+  position:absolute;*/
 }
 
 .block.experiences .preview {
-  width: 24.7%;
-  height: 24%;
-  position: absolute;
-  left: 7.7%;
-  top: 23%;
+    width: 62%;
+    height: 22%;
+    position: absolute;
+    left: 19%;
+    top: 36.5%;
 }
 
 .block.experiences .left img {
     width: 100%;
-    height: 100%;
-    position: absolute
+    height: 0;
+    position: relative;
+    vertical-align: middle;
+    transform: translateY(-50%);
 }
 .block.experiences .left img:nth-child(n+2) {
     opacity: 0;
@@ -544,7 +547,8 @@ svg#to_contact {
 .block.experiences .right {
     /*max-width: 710px;
     min-width: 555px*/
-    width: 58%
+    width: 58%;
+    left: 42%;
 }
 .block.experiences .right .desc {
     position: relative;
