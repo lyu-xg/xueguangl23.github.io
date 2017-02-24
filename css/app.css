@@ -297,6 +297,7 @@ svg#to_contact {
     font-size: 1.2rem;
     font-weight: 400;
     text-transform: uppercase;
+    margin:20px;
 }
 
 @media (max-width: 620px) {
@@ -535,6 +536,7 @@ svg#to_contact {
     float:right;
     width: 58%;
     left: 42%;
+    padding-right:20px;
 }
 .block.experiences .right .desc {
     position: relative;

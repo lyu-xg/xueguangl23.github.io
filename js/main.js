@@ -106,7 +106,7 @@ $(function() {
     setTimeout(function() { $('.me').css({ display: 'none' }); }, 1300);
     setTimeout(function() {
       animateHome();
-    }, 800);
+    }, 900);
   };
 
 
@@ -281,6 +281,7 @@ $(function() {
   });
 
 	// TODO: Refactor or write new unique transition for each page
+  var timeconst = 1.3;
 	function leftToHome() {
 		var width = $(window).width();
 		$("#to_home").attr("class", "here");
@@ -297,32 +298,32 @@ $(function() {
 
 		transRect1.animate( {
 	    x: 0
-	  }, 1500, mina.easeOutExpo);
+	  }, 750*timeconst, mina.easeOutExpo);
 
 		window.setTimeout(function() {
 	    transRect2.animate({
 	      x: 0
-	    }, 1100, mina.easeOutExpo)
-	  }, 400);
+	    }, 550*timeconst, mina.easeOutExpo)
+	  }, 200*timeconst);
 
 		window.setTimeout(function() {
 	    transRect3.animate({
 	      x: 0
-	    }, 800, mina.easeOutExpo, function() {
+	    }, 400*timeconst, mina.easeOutExpo, function() {
 	      transToHome.clear();
 	    })
-	  }, 700);
+	  }, 350*timeconst);
 		window.setTimeout(function() {
-			current.fadeOut(300, function() {
+			current.fadeOut(150, function() {
 				home.css( {"display": "block"} );
 				animateHome();
 	    });
-	  }, 1200);
+	  }, 600*timeconst);
 		window.setTimeout(function() {
 	    $("#to_home").removeAttr("class");
       resetPage(current);
       current = home;
-	  }, 1600);
+	  }, 800*timeconst);
 	}
 
 	function rightToExp() {
@@ -341,31 +342,31 @@ $(function() {
 
 		transRect1.animate( {
 	    width: width
-	  }, 1500, mina.easeOutExpo);
+	  }, 750*timeconst, mina.easeOutExpo);
 
 		window.setTimeout(function() {
 	    transRect2.animate({
 	      width: width
-	    }, 1100, mina.easeOutExpo)
-	  }, 400);
+	    }, 550*timeconst, mina.easeOutExpo)
+	  }, 200*timeconst);
 
 		window.setTimeout(function() {
 	    transRect3.animate({
 	      width: width
-	    }, 800, mina.easeOutExpo, function() {
+	    }, 400*timeconst, mina.easeOutExpo, function() {
 	      transToExp.clear();
 	    })
-	  }, 700);
+	  }, 350*timeconst);
 		window.setTimeout(function() {
-			current.fadeOut(300, function() {
+			current.fadeOut(150, function() {
 				experiences.css( {"display": "block"} );
 	    });
-	  }, 1200);
+	  }, 600*timeconst);
 		window.setTimeout(function() {
 	    $("#to_exp").removeAttr("class");
       resetPage(current);
       current = experiences;
-	  }, 1600);
+	  }, 800*timeconst);
 	}
 
 	function leftToExp() {
@@ -384,31 +385,31 @@ $(function() {
 
 		transRect1.animate( {
 	    x: 0
-	  }, 1500, mina.easeOutExpo);
+	  }, 750*timeconst, mina.easeOutExpo);
 
 		window.setTimeout(function() {
 	    transRect2.animate({
 	      x: 0
-	    }, 1100, mina.easeOutExpo)
-	  }, 400);
+	    }, 550*timeconst, mina.easeOutExpo)
+	  }, 200*timeconst);
 
 		window.setTimeout(function() {
 	    transRect3.animate({
 	      x: 0
-	    }, 800, mina.easeOutExpo, function() {
+	    }, 400*timeconst, mina.easeOutExpo, function() {
 	      transToExp.clear();
 	    })
-	  }, 700);
+	  }, 350*timeconst);
 		window.setTimeout(function() {
-			current.fadeOut(300, function() {
+			current.fadeOut(150, function() {
 				experiences.css( {"display": "block"} );
 	    });
-	  }, 1200);
+	  }, 600*timeconst);
 		window.setTimeout(function() {
 	    $("#to_exp").removeAttr("class");
       resetPage(current);
       current = experiences;
-	  }, 1600);
+	  }, 800*timeconst);
 	}
 
 	function rightToSkills() {
@@ -427,31 +428,31 @@ $(function() {
 
 		transRect1.animate( {
 			width: width
-		}, 1500, mina.easeOutExpo);
+		}, 750*timeconst, mina.easeOutExpo);
 
 		window.setTimeout(function() {
 			transRect2.animate({
 				width: width
-			}, 1100, mina.easeOutExpo)
-		}, 400);
+			}, 550*timeconst, mina.easeOutExpo)
+		}, 200*timeconst);
 
 		window.setTimeout(function() {
 			transRect3.animate({
 				width: width
-			}, 800, mina.easeOutExpo, function() {
+			}, 400*timeconst, mina.easeOutExpo, function() {
 				transToSkills.clear();
 			})
-		}, 700);
+		}, 350*timeconst);
 		window.setTimeout(function() {
-			current.fadeOut(300, function() {
+			current.fadeOut(150, function() {
 				skills.css( {"display": "block"} );
 			});
-		}, 1200);
+		}, 600*timeconst);
 		window.setTimeout(function() {
 			$("#to_skills").removeAttr("class");
 			resetPage(current);
 			current = skills;
-		}, 1600);
+		}, 800*timeconst);
 	}
 
 	function leftToSkills() {
@@ -470,31 +471,31 @@ $(function() {
 
 		transRect1.animate( {
 	    x: 0
-	  }, 1500, mina.easeOutExpo);
+	  }, 750*timeconst, mina.easeOutExpo);
 
 		window.setTimeout(function() {
 	    transRect2.animate({
 	      x: 0
-	    }, 1100, mina.easeOutExpo)
-	  }, 400);
+	    }, 550*timeconst, mina.easeOutExpo)
+	  }, 200*timeconst);
 
 		window.setTimeout(function() {
 	    transRect3.animate({
 	      x: 0
-	    }, 800, mina.easeOutExpo, function() {
+	    }, 400*timeconst, mina.easeOutExpo, function() {
 	      transToSkills.clear();
 	    })
-	  }, 700);
+	  }, 350*timeconst);
 		window.setTimeout(function() {
-			current.fadeOut(300, function() {
+			current.fadeOut(150, function() {
 				skills.css( {"display": "block"} );
 	    });
-	  }, 1200);
+	  }, 600*timeconst);
 		window.setTimeout(function() {
 	    $("#to_skills").removeAttr("class");
       resetPage(current);
       current = skills;
-	  }, 1600);
+	  }, 800*timeconst);
 	}
 
 	function rightToInterests() {
@@ -513,31 +514,31 @@ $(function() {
 
 		transRect1.animate( {
 			width: width
-		}, 1500, mina.easeOutExpo);
+		}, 750*timeconst, mina.easeOutExpo);
 
 		window.setTimeout(function() {
 			transRect2.animate({
 				width: width
-			}, 1100, mina.easeOutExpo)
-		}, 400);
+			}, 550*timeconst, mina.easeOutExpo)
+		}, 200*timeconst);
 
 		window.setTimeout(function() {
 			transRect3.animate({
 				width: width
-			}, 800, mina.easeOutExpo, function() {
+			}, 400*timeconst, mina.easeOutExpo, function() {
 				transToInterests.clear();
 			})
-		}, 700);
+		}, 350*timeconst);
 		window.setTimeout(function() {
-			current.fadeOut(300, function() {
+			current.fadeOut(150, function() {
 				interests.css( {"display": "block"} );
 			});
-		}, 1200);
+		}, 600*timeconst);
 		window.setTimeout(function() {
 			$("#to_interests").removeAttr("class");
 			resetPage(current);
 			current = interests;
-		}, 1600);
+		}, 800*timeconst);
 	}
 
 	function leftToInterests() {
@@ -556,31 +557,31 @@ $(function() {
 
 		transRect1.animate( {
 	    x: 0
-	  }, 1500, mina.easeOutExpo);
+	  }, 750*timeconst, mina.easeOutExpo);
 
 		window.setTimeout(function() {
 	    transRect2.animate({
 	      x: 0
-	    }, 1100, mina.easeOutExpo)
-	  }, 400);
+	    }, 550*timeconst, mina.easeOutExpo)
+	  }, 200*timeconst);
 
 		window.setTimeout(function() {
 	    transRect3.animate({
 	      x: 0
-	    }, 800, mina.easeOutExpo, function() {
+	    }, 400*timeconst, mina.easeOutExpo, function() {
 	      transToInterests.clear();
 	    })
-	  }, 700);
+	  }, 350*timeconst);
 		window.setTimeout(function() {
-			current.fadeOut(300, function() {
+			current.fadeOut(150, function() {
 				interests.css( {"display": "block"} );
 	    });
-	  }, 1200);
+	  }, 600*timeconst);
 		window.setTimeout(function() {
 	    $("#to_interests").removeAttr("class");
       resetPage(current);
       current = interests;
-	  }, 1600);
+	  }, 800*timeconst);
 	}
 
 	function rightToContact() {
@@ -599,32 +600,32 @@ $(function() {
 
 		transRect1.animate( {
 			width: width
-		}, 1500, mina.easeOutExpo);
+		}, 750*timeconst, mina.easeOutExpo);
 
 		window.setTimeout(function() {
 			transRect2.animate({
 				width: width
-			}, 1100, mina.easeOutExpo)
-		}, 400);
+			}, 550*timeconst, mina.easeOutExpo)
+		}, 200*timeconst);
 
 		window.setTimeout(function() {
 			transRect3.animate({
 				width: width
-			}, 800, mina.easeOutExpo, function() {
+			}, 400*timeconst, mina.easeOutExpo, function() {
 				transToContact.clear();
 			})
-		}, 700);
+		}, 350*timeconst);
 		window.setTimeout(function() {
-			current.fadeOut(300, function() {
+			current.fadeOut(150, function() {
 				contact.css( {"display": "block"} );
         animateContact();
 			});
-		}, 1200);
+		}, 600*timeconst);
 		window.setTimeout(function() {
 			$("#to_contact").removeAttr("class");
 			resetPage(current);
 			current = contact;
-		}, 1600);
+		}, 800*timeconst);
 	}
 
 	// ---------------------------------------
@@ -854,7 +855,7 @@ $(function() {
 
   $( document ).ready(function() {
 		console.log( "document ready! enjoy. -luke" );
-	  setTimeout(tear, 10);
+	  setTimeout(tear, 100);
   });
 
 
