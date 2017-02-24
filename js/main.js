@@ -682,7 +682,7 @@ $(function() {
         $('.preview .'+project).addClass('active').css({
           height:'auto',
           width:'23%',
-          left: '0.5%',
+          //left: '2.5%',
           top: '-200%'
         });
         $('.preview .'+project).addClass('active').animate({
@@ -703,7 +703,7 @@ $(function() {
           top: '-200%',
         });
         $('.preview .'+project).addClass('active').animate({
-          top: "34.6%",
+          top: "32.5%",
           opacity: 1
         }, 2000, 'easeOutExpo');
 
@@ -728,12 +728,12 @@ $(function() {
     });
     $('.preview .active').removeClass('active').animate({
       top: "-200%",
-      opacity: 0.2
+      opacity: 0
     }, 2000, 'easeOutExpo' );
 
     $('.desc .active').removeClass('active').animate( {
       top: "-200%",
-      opacity: 0.2
+      opacity: 0
     }, 2000, 'easeOutExpo' );
   }
 

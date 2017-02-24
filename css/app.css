@@ -287,35 +287,18 @@ svg#to_contact {
 }
 .expand-msg {
     display: none;
-    background: #353d48;
+    background: #F5F6E8;
     text-align: center;
-    text-transform: uppercase;
     letter-spacing: 0.07em;
     z-index: 8
 }
-.expand-msg p {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #fefefe
-}
-.expand-msg span {
+
+.small-screen {
     font-size: 1.2rem;
     font-weight: 400;
-    color: #fefefe;
-    position: absolute;
-    bottom: 50px;
-    left: calc(50% - 120.65px)
+    text-transform: uppercase;
 }
-.expand-msg span a {
-    font-size: 1.2rem;
-    font-weight: 900;
-    color: #fefefe
-}
+
 @media (max-width: 620px) {
     .expand-msg {
         display: block
@@ -498,8 +481,7 @@ svg#to_contact {
         transform: rotate(-45deg)
     }
 }
-.block.experiences .left,
-.block.experiences .right {
+.block.experiences .left {
     height: 738.5px;
     float: left;
     display: inline-block;
@@ -522,30 +504,35 @@ svg#to_contact {
     height: 22%;
     position: absolute;
     left: 19%;
-    top: 36.5%;
+    top: 37%;
 }
 
 .block.experiences .left img {
-    width: 100%;
+    width: 0;
     height: 0;
     position: relative;
     vertical-align: middle;
     transform: translateY(-50%);
 }
+/*
 .block.experiences .left img:nth-child(n+2) {
     opacity: 0;
     top: -200%;
     left: 0
 }
+*/
 .block.experiences .left img.mobile {
-    top: 57% ;
+    top: 56% ;
     width: 23%;
+    left: 2.5%;
     height: auto;
     border-radius: 10px
 }
 .block.experiences .right {
     /*max-width: 710px;
     min-width: 555px*/
+    height: 738.5px;
+    float:right;
     width: 58%;
     left: 42%;
 }
