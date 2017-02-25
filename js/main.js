@@ -682,9 +682,7 @@ $(function() {
       setTimeout(function(){
         $('.preview .'+project).addClass('active').css({
           height:'auto',
-          width:'23%',
-          //left: '2.5%',
-          top: '-200%'
+          width:'23%'
         });
         $('.preview .'+project).addClass('active').animate({
           top: "57%",
@@ -704,7 +702,7 @@ $(function() {
           top: '-200%',
         });
         $('.preview .'+project).addClass('active').animate({
-          top: "32.5%",
+          top: "50%",
           opacity: 1
         }, 2000, 'easeOutExpo');
 

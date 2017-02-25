@@ -290,7 +290,7 @@ svg#to_contact {
     background: #F5F6E8;
     text-align: center;
     letter-spacing: 0.07em;
-    z-index: 8
+    z-index: 8;
 }
 
 .small-screen {
@@ -323,6 +323,7 @@ svg#to_contact {
     font-size: 27px;
     color: #000
 }
+
 .resume__myself img {
     width: 50%;
     display: block;
@@ -433,6 +434,12 @@ svg#to_contact {
     line-height: 2.5rem;
     opacity: 0
 }
+.expand-msg .expand-profile-img {
+  width: 40%;
+  border: 15px solid #EED19C;
+  border-radius: 50%;
+  margin-top: 8%;
+}
 .block.home .profile__content__pic img {
     width: 60%;
     border: 15px solid #EED19C;
@@ -483,7 +490,7 @@ svg#to_contact {
     }
 }
 .block.experiences .left {
-    height: 738.5px;
+    height: 100%;/*738.5px;*/
     float: left;
     display: inline-block;
     position: absolute;
@@ -502,18 +509,20 @@ svg#to_contact {
 
 .block.experiences .preview {
     width: 62%;
-    height: 22%;
+    height: 24%;
     position: absolute;
     left: 19%;
-    top: 37%;
+    top: 22%;
+    transform: translateY(2%);
 }
 
 .block.experiences .left img {
     width: 0;
     height: 0;
-    position: relative;
-    vertical-align: middle;
-    transform: translateY(-50%);
+    left:0px;
+    top:50%;
+    position: absolute;;
+    transform: translateY(-58%);
 }
 /*
 .block.experiences .left img:nth-child(n+2) {
@@ -523,16 +532,17 @@ svg#to_contact {
 }
 */
 .block.experiences .left img.mobile {
-    top: 56% ;
-    width: 23%;
-    left: 2.5%;
+    top: 52% ;
+    width: 22%;
+    left: 50%;
     height: auto;
-    border-radius: 10px
+    border-radius: 8px;
+    transform: translate(-50%,-56%);
 }
 .block.experiences .right {
     /*max-width: 710px;
     min-width: 555px*/
-    height: 738.5px;
+    height: 100%;/*738.5px;*/
     float:right;
     width: 58%;
     left: 42%;
@@ -540,12 +550,12 @@ svg#to_contact {
 }
 .block.experiences .right .desc {
     position: relative;
-    top: 50%;
+    top: 40%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     text-align: left;
-    height: 40%
+    height: 50%
 }
 .block.experiences .right .desc>* {
     position: absolute
@@ -845,8 +855,9 @@ svg#to_contact {
     background: linear-gradient(to bottom right, #20c8ec, #13ABE2)
 }
 svg#demo {
-    position: relative;
-    top: 50%;
+    position: absolute;
+    left: 0%;
+    top: 35%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%)
