@@ -550,7 +550,7 @@ svg#to_contact {
 }
 .block.experiences .right .desc {
     position: relative;
-    top: 40%;
+    top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
