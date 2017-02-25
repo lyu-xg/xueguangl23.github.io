@@ -19,7 +19,7 @@ $(function() {
 	// Play Me! record-player animation
 	function playDisc() {
 	  var music = document.createElement("audio");
-      music.src = "./music/backgroudMusic.m4a";
+      music.src = "../music/backgroudMusic.m4a";
 	  music.autoPlay = false;
 	  music.preload = true;
 		$('.record-player').click(function(){
