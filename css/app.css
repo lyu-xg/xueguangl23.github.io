@@ -8,10 +8,10 @@ body {
     font-weight: 300;
     color: #333;
     overflow: hidden;
-    background-color: #fefefe;
+    background-color: #F5F6E8;
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 body>div {
     font-size: 2rem
@@ -1405,7 +1405,8 @@ svg#demo {
     z-index: 6;
     transition: bottom .5s ease, left .5s ease;
     animation: spin 2s linear infinite;
-    animation-play-state: paused
+    animation-play-state: paused;
+    z-index: 9;
 }
 .record-player:hover {
     bottom: 10px;

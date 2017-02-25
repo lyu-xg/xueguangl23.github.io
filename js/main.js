@@ -25,6 +25,7 @@ $(function() {
       "http://m8.music.126.net/20170225122558/80993d686dd4a79c7c28f341231991b2/ymusic/27a8/bba2/a823/337b3cff83fb36b9e1b4fe299c279502.mp3",
       "http://m8.music.126.net/20170225123346/3836bbdc7d13213e45a8056312dcd653/ymusic/2119/323e/c775/332f85ac00aef7e6ffe6002d6f828a99.mp3",
       "http://m8.music.126.net/20170225123203/43208a69eaff857464fbe188be01a63b/ymusic/4a1b/9144/b31c/8ca459b240ed5ae6038bad5b6b80e3d6.mp3",
+
     ];
     music.src = songs[Math.floor(Math.random()*songs.length)];
 	  music.autoPlay = false;
