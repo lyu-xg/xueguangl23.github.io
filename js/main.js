@@ -690,10 +690,10 @@ $(function() {
       setTimeout(function(){
         $('.preview .'+project).addClass('active').css({
           height:'auto',
-          width:'23%'
+          width:'22%'
         });
         $('.preview .'+project).addClass('active').animate({
-          top: "57%",
+          top: "52%",
           opacity: 1
         }, 2000, 'easeOutExpo');
         $('.desc .'+project).addClass('active').animate({
@@ -732,6 +732,7 @@ $(function() {
     $('.preview .active').removeClass('active').css({
       height: "0",
       width: "0",
+      top: "0%"
     });
     $('.preview .active').removeClass('active').animate({
       top: "-200%",
