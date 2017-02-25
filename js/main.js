@@ -19,7 +19,14 @@ $(function() {
 	// Play Me! record-player animation
 	function playDisc() {
 	  var music = document.createElement("audio");
-      music.src = "../music/backgroudMusic.m4a";
+    var songs = [
+      "https://patdujour.github.io/music/WalkWithMeGirl.m4a",
+      "http://m8.music.126.net/20170225122031/b25379ac7880e0f3f1650eba015c6c56/ymusic/a5a5/06a6/daf2/cea99b777f9df4d8f7a8870fc92b7a0e.mp3",
+      "http://m8.music.126.net/20170225122558/80993d686dd4a79c7c28f341231991b2/ymusic/27a8/bba2/a823/337b3cff83fb36b9e1b4fe299c279502.mp3",
+      "http://m8.music.126.net/20170225123346/3836bbdc7d13213e45a8056312dcd653/ymusic/2119/323e/c775/332f85ac00aef7e6ffe6002d6f828a99.mp3",
+      "http://m8.music.126.net/20170225123203/43208a69eaff857464fbe188be01a63b/ymusic/4a1b/9144/b31c/8ca459b240ed5ae6038bad5b6b80e3d6.mp3",
+    ];
+    music.src = songs[Math.floor(Math.random()*songs.length)];
 	  music.autoPlay = false;
 	  music.preload = true;
 		$('.record-player').click(function(){
