@@ -1,4 +1,4 @@
-"use strict";
+(function () {'use strict';}());
 
 $(function() {
 
@@ -20,12 +20,11 @@ $(function() {
 	function playDisc() {
 	  var music = document.createElement("audio");
     var songs = [
-      "https://patdujour.github.io/music/WalkWithMeGirl.m4a",
-      "http://m8.music.126.net/20170225122031/b25379ac7880e0f3f1650eba015c6c56/ymusic/a5a5/06a6/daf2/cea99b777f9df4d8f7a8870fc92b7a0e.mp3",
-      "http://m8.music.126.net/20170225122558/80993d686dd4a79c7c28f341231991b2/ymusic/27a8/bba2/a823/337b3cff83fb36b9e1b4fe299c279502.mp3",
-      "http://m8.music.126.net/20170225123346/3836bbdc7d13213e45a8056312dcd653/ymusic/2119/323e/c775/332f85ac00aef7e6ffe6002d6f828a99.mp3",
-      "http://m8.music.126.net/20170225123203/43208a69eaff857464fbe188be01a63b/ymusic/4a1b/9144/b31c/8ca459b240ed5ae6038bad5b6b80e3d6.mp3",
-
+      "http://music.xueguanglu.net/WalkWithMeGirl.m4a",
+      "http://music.xueguanglu.net/0.mp3",
+      "http://music.xueguanglu.net/1.mp3",
+      "http://music.xueguanglu.net/2.mp3",
+      "http://music.xueguanglu.net/3.mp3",
     ];
     music.src = songs[Math.floor(Math.random()*songs.length)];
 	  music.autoPlay = false;
@@ -74,7 +73,7 @@ $(function() {
 	$('.btn-close').bind('click', function(event) {
 		$('.resume').animate({
 			left:-999
-		}, 800, 'easeInQuart')
+		}, 800, 'easeInQuart');
 	});
 	// Dismiss Resume Tab by clicking on anywhere on screen
 	$(window).click(function() {
@@ -82,7 +81,7 @@ $(function() {
 	    $('.resume').removeClass('open');
 	    $('.resume').animate({
 				left:-999
-			}, 800, 'easeInQuart')
+			}, 800, 'easeInQuart');
 	  }
 	});
 	// -------------------End of Navigation-------------------
@@ -154,14 +153,14 @@ $(function() {
     var times = [ 0,  245, 245,
                   125, 370, 370,
                   400, 645, 645,
-                  525, 770, 770 ]
+                  525, 770, 770 ];
     var index = 0;
     while (index < 4) {
       elements.push(lines[index]);
       elements.push(borders[index]);
       elements.push(circles[index]);
       index++;
-    };
+    }
     index = 0;
     $(elements).each( function(i) {
       var that = $(this);
@@ -191,7 +190,7 @@ $(function() {
         that.addClass('zoom-in-right');
       }, 800+i*100);
     });
-  };
+  }
   // return Contact page element to pre-animation state
   function resetContact() {
     $('.get-in-touch h1').removeClass('fade');
@@ -311,7 +310,7 @@ $(function() {
 		window.setTimeout(function() {
 	    transRect2.animate({
 	      x: 0
-	    }, 550*timeconst, mina.easeOutExpo)
+	    }, 550*timeconst, mina.easeOutExpo);
 	  }, 200*timeconst);
 
 		window.setTimeout(function() {
@@ -319,7 +318,7 @@ $(function() {
 	      x: 0
 	    }, 400*timeconst, mina.easeOutExpo, function() {
 	      transToHome.clear();
-	    })
+	    });
 	  }, 350*timeconst);
 		window.setTimeout(function() {
 			current.fadeOut(150, function() {
@@ -355,7 +354,7 @@ $(function() {
 		window.setTimeout(function() {
 	    transRect2.animate({
 	      width: width
-	    }, 550*timeconst, mina.easeOutExpo)
+	    }, 550*timeconst, mina.easeOutExpo);
 	  }, 200*timeconst);
 
 		window.setTimeout(function() {
@@ -363,7 +362,7 @@ $(function() {
 	      width: width
 	    }, 400*timeconst, mina.easeOutExpo, function() {
 	      transToExp.clear();
-	    })
+	    });
 	  }, 350*timeconst);
 		window.setTimeout(function() {
 			current.fadeOut(150, function() {
@@ -398,7 +397,7 @@ $(function() {
 		window.setTimeout(function() {
 	    transRect2.animate({
 	      x: 0
-	    }, 550*timeconst, mina.easeOutExpo)
+	    }, 550*timeconst, mina.easeOutExpo);
 	  }, 200*timeconst);
 
 		window.setTimeout(function() {
@@ -406,7 +405,7 @@ $(function() {
 	      x: 0
 	    }, 400*timeconst, mina.easeOutExpo, function() {
 	      transToExp.clear();
-	    })
+	    });
 	  }, 350*timeconst);
 		window.setTimeout(function() {
 			current.fadeOut(150, function() {
@@ -441,7 +440,7 @@ $(function() {
 		window.setTimeout(function() {
 			transRect2.animate({
 				width: width
-			}, 550*timeconst, mina.easeOutExpo)
+			}, 550*timeconst, mina.easeOutExpo);
 		}, 200*timeconst);
 
 		window.setTimeout(function() {
@@ -449,7 +448,7 @@ $(function() {
 				width: width
 			}, 400*timeconst, mina.easeOutExpo, function() {
 				transToSkills.clear();
-			})
+			});
 		}, 350*timeconst);
 		window.setTimeout(function() {
 			current.fadeOut(150, function() {
@@ -484,7 +483,7 @@ $(function() {
 		window.setTimeout(function() {
 	    transRect2.animate({
 	      x: 0
-	    }, 550*timeconst, mina.easeOutExpo)
+	    }, 550*timeconst, mina.easeOutExpo);
 	  }, 200*timeconst);
 
 		window.setTimeout(function() {
@@ -492,7 +491,7 @@ $(function() {
 	      x: 0
 	    }, 400*timeconst, mina.easeOutExpo, function() {
 	      transToSkills.clear();
-	    })
+	    });
 	  }, 350*timeconst);
 		window.setTimeout(function() {
 			current.fadeOut(150, function() {
@@ -527,7 +526,7 @@ $(function() {
 		window.setTimeout(function() {
 			transRect2.animate({
 				width: width
-			}, 550*timeconst, mina.easeOutExpo)
+			}, 550*timeconst, mina.easeOutExpo);
 		}, 200*timeconst);
 
 		window.setTimeout(function() {
@@ -535,7 +534,7 @@ $(function() {
 				width: width
 			}, 400*timeconst, mina.easeOutExpo, function() {
 				transToInterests.clear();
-			})
+			});
 		}, 350*timeconst);
 		window.setTimeout(function() {
 			current.fadeOut(150, function() {
@@ -570,7 +569,7 @@ $(function() {
 		window.setTimeout(function() {
 	    transRect2.animate({
 	      x: 0
-	    }, 550*timeconst, mina.easeOutExpo)
+	    }, 550*timeconst, mina.easeOutExpo);
 	  }, 200*timeconst);
 
 		window.setTimeout(function() {
@@ -578,7 +577,7 @@ $(function() {
 	      x: 0
 	    }, 400*timeconst, mina.easeOutExpo, function() {
 	      transToInterests.clear();
-	    })
+	    });
 	  }, 350*timeconst);
 		window.setTimeout(function() {
 			current.fadeOut(150, function() {
@@ -613,7 +612,7 @@ $(function() {
 		window.setTimeout(function() {
 			transRect2.animate({
 				width: width
-			}, 550*timeconst, mina.easeOutExpo)
+			}, 550*timeconst, mina.easeOutExpo);
 		}, 200*timeconst);
 
 		window.setTimeout(function() {
@@ -621,7 +620,7 @@ $(function() {
 				width: width
 			}, 400*timeconst, mina.easeOutExpo, function() {
 				transToContact.clear();
-			})
+			});
 		}, 350*timeconst);
 		window.setTimeout(function() {
 			current.fadeOut(150, function() {
@@ -665,7 +664,7 @@ $(function() {
 	      setTimeout(function() {
 	        that.addClass('animate');
 	      }, i*time);
-	    })
+	    });
 	  });
 	}
 	// Hover to lighten color
@@ -764,7 +763,7 @@ $(function() {
     var buttons = timeline.find('button');
     buttons.each(function(i){
       $(this).click(timelineOnClick);
-    })
+    });
 
     // Initialize iMac SVG
     var s = Snap('#demo');
@@ -783,7 +782,7 @@ $(function() {
       button.animate({ d: "M97.4912186,283.457617 C97.4912186,291.735394 90.767413,298.44495 82.4735466,298.44495 C74.1799028,298.44495 67.4558745,291.735394 67.4558745,283.457617 C67.4558745,275.181394 74.1799028,268.471172 82.4735466,268.471172 C90.767413,268.471172 97.4912186,275.181394 97.4912186,283.457617 C97.4912186,283.457617 97.4912186,275.181394 97.4912186,283.457617 L97.4912186,283.457617 L97.4912186,283.457617 Z"}, 500, mina.easeOutExpo);
       buttonMark.animate({ d: "M77.4515368,286.9924 L77.4515368,279.922584 C77.4515368,279.10042 78.1171524,278.434831 78.9393499,278.434831 L86.0077432,278.434831 C86.8282326,278.434831 87.4955563,279.10042 87.4955563,279.922584 L87.4955563,286.9924 C87.4955563,287.814564 86.8282326,288.481291 86.0077432,288.481291 L78.9393499,288.481291 C78.1171524,288.481291 77.4515368,287.814564 77.4515368,286.9924"}, 1000, mina.easeOutExpo);
       device.animate({transform: "translate(418.000000, 146.000000)"}, 400).removeClass('iMac');
-    };
+    }
 
     var iPad = function() {
       frame.animate({ d: "M408.807844,502.315866 C408.807844,516.896977 396.854585,528.826088 382.243289,528.826088 L26.2024263,528.82608 C11.5915761,528.82608 -0.362351057,516.896969 -0.362351057,502.315857 L-0.362351057,27.043563 C-0.362351057,12.4626741 11.5915761,0.533118529 26.2024263,0.533118529 L382.243289,0.533126748 C396.854585,0.533126748 408.807844,12.4626823 408.807844,27.0435712 L408.807844,502.315866 L408.807844,502.315866 L408.807844,502.315866 L408.807844,502.315866 Z" }, 1000, mina.easeOutExpo);
