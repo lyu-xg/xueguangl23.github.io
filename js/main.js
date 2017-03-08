@@ -28,6 +28,8 @@ $(function() {
       "3.mp3",
       "qiyueshang.mp3",
       "guxiangheyuanfang.flac",
+      "xiangchou.mp3",
+      "xichuangdeyu.mp3",
     ];
     music.src = musicDir+songs[Math.floor(Math.random()*songs.length)];
 	  music.autoPlay = false;
@@ -44,7 +46,7 @@ $(function() {
 	      music.play();
 	    }
 		});
-	};
+	}
 	// -------------------End of Record Player-------------------
 
 	// ---------------------------------------
