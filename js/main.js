@@ -19,14 +19,16 @@ $(function() {
 	// Play Me! record-player animation
 	function playDisc() {
 	  var music = document.createElement("audio");
+    var musicDir = 'http://music.xueguanglu.net/';
     var songs = [
-      "http://music.xueguanglu.net/WalkWithMeGirl.m4a",
-      "http://music.xueguanglu.net/0.mp3",
-      "http://music.xueguanglu.net/1.mp3",
-      "http://music.xueguanglu.net/2.mp3",
-      "http://music.xueguanglu.net/3.mp3",
+      "WalkWithMeGirl.m4a",
+      "0.mp3",
+      "1.mp3",
+      "2.mp3",
+      "3.mp3",
+      "qiyueshang.mp3"
     ];
-    music.src = songs[Math.floor(Math.random()*songs.length)];
+    music.src = musicDir+songs[Math.floor(Math.random()*songs.length)];
 	  music.autoPlay = false;
 	  music.preload = true;
 		$('.record-player').click(function(){
