@@ -108,7 +108,7 @@
 				</ul>
 			</div>
 		</nav>
-		<div class="content">
+		<div class="content my-items">
 			<p class="info">Please choose a category</p>
 			<!-- Ajax loaded content here -->
 		</div>
@@ -156,7 +156,8 @@
 			classie.add(gridWrapper, 'content--loading');
 			setTimeout(function() {
 				classie.remove(gridWrapper, 'content--loading');
-				gridWrapper.innerHTML = '<ul class="products">' + dummyData[itemName] + '<ul>';
+				var itemdata = dummyData[itemName] || 'EMPTY';
+				gridWrapper.innerHTML = '<ul class="products">' + itemdata + '<ul>';
 			}, 700);
 		}
 	})();

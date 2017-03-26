@@ -1,28 +1,28 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
-body {
+.li {
+  height: 0px; }
+
+.my-items body {
   background-image: linear-gradient(to right, #034378, #2d4e68);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
   font-family: "Open Sans", sans-serif; }
-  body * {
+  .my-items body * {
     box-sizing: border-box; }
-
-a {
+.my-items a {
   text-decoration: none; }
-
-h1 {
+.my-items h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300; }
-
-.row {
+.my-items .row {
   max-width: 900px;
   margin: 50px auto 0; }
 
 .card {
   float: left;
-  padding: 0 1.7rem;
-  width: 50%; }
+  width: 100%;
+  text-align: left; }
   .card .menu-content {
     margin: 0;
     padding: 0;
@@ -61,7 +61,8 @@ h1 {
     .card .data .content {
       padding: 1em;
       position: relative;
-      z-index: 1; }
+      z-index: 1;
+      margin: 0 0 0 0; }
   .card .price {
     font-size: 16px; }
   .card .title {
