@@ -1,0 +1,21 @@
+// file for displaying android mobile banner
+{
+  "name": "PayPal Business: Send Invoices",
+  "short_name": "PayPal Business",
+  "icons": [
+    {
+      "src": "launcher-icon-3x.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.paypal.merchant.client"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone"
+}
