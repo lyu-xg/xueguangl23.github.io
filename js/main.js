@@ -19,7 +19,7 @@ $(function() {
 	// Play Me! record-player animation
 	function playDisc() {
 	  var music = document.createElement("audio");
-    var musicDir = 'http://music.xueguanglu.net/';
+    var musicDir = 'https://music.xueguanglu.net/';
     var songs = [
       "WalkWithMeGirl.m4a",
       "0.mp3",
