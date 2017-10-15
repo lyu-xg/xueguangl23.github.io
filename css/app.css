@@ -9,7 +9,7 @@ body {
     color: #333;
     overflow: hidden;
     background-color: #F5F6E8;
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -62,7 +62,6 @@ h5,
 h6 {
     line-height: 1.2;
     font-weight: 400;
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0 0 20px
 }
 h1 {
